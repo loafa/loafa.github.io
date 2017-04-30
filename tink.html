@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TInk</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Sophie Russo</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">All Projects</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/loafa">Github</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">TInk (I &amp; II)
+                    <small>Texas Instruments, Inc. Summer Internship</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-responsive" src="src/tink.jpg" alt="">
+            </div>
+
+            <div class="col-md-4">
+                <h3>Project Description</h3>
+                <p>TInk is a small toy tank programmed by a team of interns using Texas Instruments, Inc. development software and microprocessors. My project during the first year (TInk I) was to assist the tank in driving straight, using a proportional controller. The second year (TInk II), I designed the user interface that allowed the user to drive the tank, as well as inform the user of the tank's status, making use of the tank's telemetry. The second iteration of the tank was far more stable hardware-wise and made use of fewer boards.</p>
+
+                <p><b>Languages Used: C, Javascript, HTML, CSS</b></p>
+
+                <h3>Project Links</h3>
+                <ul>
+                    <li><a href="http://processors.wiki.ti.com/index.php/TInk">TInk I Wiki Page</a></li>
+                    <li><a href="http://processors.wiki.ti.com/index.php/TInkII">TInk II Wiki Page</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="container">
+                <h1></h1>
+                    <h4>Related Videos</h4>
+                <hr>
+                <div class="col-md-6">
+                    <a href="#">
+                    <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/CqnyA51CdHA?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+                    </div>   
+                    </a>
+                    <small>TInk balancing without assistance (using PID controller adjustment)</small>
+                </div>
+                <div class="col-md-6">
+                    <a href="#">
+                    <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/8cnaFapi-4w?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+                    </div>
+                    </a>
+                    <small>TInk correcting its path to drive straight even with externally-imposed error</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="" class="enlargeImageModalSource" style="width: 100%;">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="container">
+            <h1></h1>
+                <h4>Image Gallery</h4>
+                <small>Click the below images to enlarge them (make sure your browser has scripts enabled)</small>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4"><img class="img-thumbnail" style="max-width:100%; height:auto;" src="src/Tinkinterface.png">
+                    <small>TInk II UI</small></div>
+                </div>    
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Sophie Russo 2017</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="./js/gallery.js"></script>
+
+
+</body>
+
+</html>

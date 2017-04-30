@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ice Renderer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Sophie Russo</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">All Projects</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/loafa">Github</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Ice Renderer
+                    <small>6.837 (Computer Graphics) Final Project</small>
+                </h1>
+            </div>
+        </div>
+        <p></p>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-responsive" src="src/big_bunny.png" alt="">
+            </div>
+
+            <div class="col-md-4">
+                <h3>Project Description</h3>
+                <p>Implementation of a ray tracer for realistic and "Disney-fied" ice renderings by simulating reflection, refraction, sub-surface scattering, and caustics. Inspired by the work of animation companies such as Disney and implemented based on the work of Henrik Jensen. I focused on rendering caustics by using a photon map (implemented with a kd-tree), while my partner Lynda Tang simulated the visual effects of sub-surface scattering with depth maps. </p>
+
+                <h4>In collaboration with Lynda Tang</h4>
+
+                <p><b>Languages Used: C++, Python</b></p>
+                
+                <p><i>Honorable Mention recipient in the Fall 2016 Computer Graphics course.</i></p>
+                <h3>Project Links</h3>
+                <ul>
+                    <li><a href="https://docs.google.com/document/d/1htOvkcGpm_nD-Ji2FPoY2pzLbfhffap85mOsIlg9aWg/edit?usp=sharing">Project Write-Up</a></li>
+                    <li><a href="https://gist.github.com/loafa/c7a42bd7de2dcbf7fc6f77208e94ffec">Photon Map Implementation (Github)</a></li>
+                    <li><a href="https://www.dropbox.com/sh/y0o1tzybnonkks8/AABrAQd6m30Xw9Cn7RSRW5y5a?dl=0">More Images/ Video</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="" class="enlargeImageModalSource" style="width: 100%;">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="container">
+            <h1></h1>
+                <h4>Image Gallery</h4>
+                <small>Click the below images to enlarge them (make sure your browser has scripts enabled)</small>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4"><img class="img-thumbnail" style="max-width:100%; height:auto;" src="src/ice_cube_1.png">
+                    <small>Backlit ice cube without sub-surface scattering</small></div>
+                    <div class="col-md-4"><img class="img-thumbnail" style="width:100%; height:auto;" src="src/bunny_1.png">
+                    <small>Backlit ice bunny without sub-surface scattering</small></div>
+                    <div class="col-md-4"><img class="img-thumbnail" style="width:100%; height:auto;" src="src/disney_bunny.png">
+                    <small>"Disney-fied" bunny using sub-surface scattering</small></div>
+                </div>    
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Sophie Russo 2017</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="./js/gallery.js"></script>
+
+</body>
+
+</html>
